@@ -1,4 +1,4 @@
-/*! normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-01-31T16:06 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -17,8 +17,7 @@ footer,
 header,
 hgroup,
 nav,
-section,
-summary {
+section {
     display: block;
 }
 
@@ -36,12 +35,10 @@ video {
 
 /*
  * Prevents modern browsers from displaying 'audio' without controls
- * Remove excess height in iOS5 devices
  */
 
 audio:not([controls]) {
     display: none;
-    height: 0;
 }
 
 /*
@@ -71,7 +68,7 @@ html {
     -ms-text-size-adjust: 100%; /* 2 */
 }
 
-/*
+/* 
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 
@@ -120,8 +117,8 @@ a:active {
    ========================================================================== */
 
 /*
- * Addresses font sizes and margins set differently in IE6/7
- * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ * Fix IE6/7 heading font-size not being relative to the root font-size
  */
 
 h1 {
@@ -166,9 +163,9 @@ abbr[title] {
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
 
-b,
-strong {
-    font-weight: bold;
+b, 
+strong { 
+    font-weight: bold; 
 }
 
 blockquote {
@@ -192,15 +189,6 @@ dfn {
 mark {
     background: #ff0;
     color: #000;
-}
-
-/*
- * Addresses margins set differently in IE6/7
- */
-
-p,
-pre {
-    margin: 1em 0;
 }
 
 /*
@@ -276,34 +264,25 @@ sub {
    Lists
    ========================================================================== */
 
-/*
- * Addresses margins set differently in IE6/7
- */
-
 dl,
 menu,
 ol,
+p,
+pre,
 ul {
     margin: 1em 0;
 }
 
-dd {
-    margin: 0 0 0 40px;
-}
-
-/*
- * Addresses paddings set differently in IE6/7
- */
-
+details,
 menu,
 ol,
 ul {
     padding: 0 0 0 40px;
 }
 
-/*
- * Corrects list images handled incorrectly in IE7
- */
+dd {
+    margin: 0 0 0 40px;
+}
 
 nav ul,
 nav ol {
@@ -328,7 +307,7 @@ img {
 }
 
 /*
- * Corrects overflow displayed oddly in IE9
+ * Corrects overflow displayed oddly in IE9 
  */
 
 svg:not(:root) {
@@ -373,7 +352,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3
+ * 2. Corrects text not wrapping in FF3 
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 
@@ -417,8 +396,8 @@ input {
  */
 
 button,
-input[type="button"],
-input[type="reset"],
+input[type="button"], 
+input[type="reset"], 
 input[type="submit"] {
     cursor: pointer; /* 1 */
     -webkit-appearance: button; /* 2 */
@@ -496,7 +475,7 @@ textarea {
    Tables
    ========================================================================== */
 
-/*
+/* 
  * Remove most spacing between table cells
  */
 
